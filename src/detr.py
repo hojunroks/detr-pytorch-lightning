@@ -13,9 +13,10 @@ class DETR(LightningModule):
         self.pos_encoding = PosEncoding()
         self.encoder = TransformerEncoder()
         self.decoder = TransformerDecoder()
+        self.obj_queries = ObjectQueries()
+        self.pred_heads = PredictionHeads()
 
-
-    def forward(self):
+    def forward(self, src):
 
         pass
 
